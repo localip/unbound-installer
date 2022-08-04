@@ -1,0 +1,56 @@
+:root {
+   --text-muted: #b6b6b6;
+   --text-normal: #fbfbfb;
+   --interactive-active: #fff;
+   --interactive-hover: #dcddde;
+   --interactive-muted: #747474;
+   --background-primary: #141414;
+   --interactive-normal: #c8c8c8;
+   --background-tertiary: #0c0c0c;
+   --background-secondary: #111111;
+   --background-modifier-accent: hsla(0, 0%, 100%, 0.06);
+   --background-modifier-hover: rgba(255, 255, 255, 0.02);
+   --background-modifier-active: rgba(255, 255, 255, 0.03);
+   --background-modifier-selected: rgba(255, 255, 255, 0.04);
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background-color: var(--background-secondary);
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.unbound-installer-what {
+   top: 50%;
+   margin: 0;
+   left: 50%;
+   display: flex;
+   font-weight: 600;
+   user-select: none;
+   position: absolute;
+   text-align: center;
+   font-size: x-large;
+   align-items: center;
+   flex-direction: column;
+   color: var(--text-normal);
+   transform: translate(-50%, -50%);
+
+   &-back {
+      margin-top: 10px;
+      border-radius: 10px;
+      padding: 10px;
+      color: var(--interactive-normal);
+      cursor: pointer;
+
+      &:hover {
+         color: var(--interactive-hover);
+         background-color: var(--background-modifier-hover);
+      }
+
+      &:active {
+         color: var(--interactive-active);
+         background-color: var(--background-modifier-active);
+      }
+   }
+}

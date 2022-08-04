@@ -1,0 +1,33 @@
+{
+   "compilerOptions": {
+      "allowJs": true,
+      "module": "commonjs",
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "noImplicitAny": true,
+      "sourceMap": true,
+      "outDir": "dist",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "jsx": "preserve",
+      "jsxImportSource": "solid-js",
+      "baseUrl": "src",
+      "paths": {
+         "@components/*": [
+            "renderer/components/*"
+         ],
+         "@common/*": [
+            "common/*"
+         ],
+         "@i18n": [
+            "common/i18n"
+         ],
+         "@styles/*": [
+            "renderer/styles/*"
+         ]
+      }
+   },
+   "include": [
+      "src/**/*"
+   ]
+}
