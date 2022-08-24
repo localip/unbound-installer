@@ -1,0 +1,40 @@
+.unbound-roadmap {
+    color: #fff;
+
+    .unbound-roadmap-title {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    
+    .unbound-roadmap-items {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.unbound-roadmap-goal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.unbound-roadmap-label {
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.unbound-roadmap-line {
+    height: 3px;
+    width: -webkit-fill-available;
+    border-radius: 4px;
+    background: #888;
+    top: 10px;
+    position: relative;
+
+    &.unbound-roadmap-line-done {
+        background: #3BA55D;
+    }
+}
